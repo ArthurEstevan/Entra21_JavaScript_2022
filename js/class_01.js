@@ -67,55 +67,71 @@
 
 // }
 
-let nome = prompt("Qual o seu nome?");
-let idade = prompt("Qual a sua idade?");
-let cidade = prompt("Qual a cidade em que você mora?");
+// Definindo váriaves com valores capturados do usuário
 
-console.log(`Bem vindo ${nome}, vejo que você tem ${idade} anos de idade e mora em ${cidade}.`);
-console.log("Esse site é apenas para desenvolvedores não importa a idade nem onde mora, mas o importante é ter vontade de aprender.");
-console.log("");
-console.log("Veja os operadores matemáticos em ação:");
+// alert("CONTEÚDO NO CONSOLE, PARA VISUALIZAR CLIQUE: F12");
 
-console.log(`1+2=${1+2}
-2-5=${2-5}
-3*10=${3*10}
-50/10=${50/10}`);
+// let nome = prompt("Qual o seu nome?");
 
-console.log();
-console.log(`É um morador de Blumenau? ${cidade == "Blumenau"}`);
+// let idade = prompt("Qual a sua idade?");
 
-if (idade<18) {
-    console.log("Idade é menor que 18");
-} else {
-    console.log("Idade é maior que 18");
-}
+// let cidade = prompt("Qual a cidade em que você mora?");
 
-if (idade<=18) {
-    console.log("Idade é menor ou igual a 18");
-} else {
-    console.log("Idade é maior que 18");
-}
+// // Exibindo esses dados no console, usando as váriaveis
 
-if (idade > 18) {
-    console.log("Idade é maior que 18");
-} else {
-    console.log("Idade é menor ou igual a 18");
-}
+// console.log(`Bem vindo ${nome}, vejo que você tem ${idade} anos de idade e mora em ${cidade}.`);
+// console.log("Esse site é apenas para desenvolvedores não importa a idade nem onde mora, mas o importante é ter vontade de aprender.");
+// console.log("");
 
-if (idade => 18) {
-    console.log("Idade é maior ou igual a 18");
-} else {
-    console.log("Idade é menor que 18");
-}
+// // Usando operadores lógico como fizemos em Java
 
-if (idade>18 && cidade=="Blumenau") {
-    console.log("É maior de idade E mora em Blumenau");
-} else {
-    console.log("Não é maior de idade ou não mora em Blumenau");
-}
+// console.log("Veja os operadores matemáticos em ação:");
 
-if (idade>18 || cidade=="Blumenau") {
-    console.log("É maior de idade OU mora em Blumenau");
-} else {
-    console.log("Não é maior de idade e não mora em Blumenau");
-}
+// console.log(`1+2=${1+2}
+// 2-5=${2-5}
+// 3*10=${3*10}
+// 50/10=${50/10}`);
+
+// console.log();
+
+// // Podemos fazer operações como atribuição dentro do console, porém, apenas se usarmos `` para escrever o texto
+
+// console.log(`É um morador de Blumenau? ${cidade == "Blumenau"}`);
+
+// // Aqui fazemos if com lógicas
+
+// if (idade<18) {
+//     console.log("Idade é menor que 18");
+// } else {
+//     console.log("Idade é maior que 18");
+// }
+
+// if (idade<=18) {
+//     console.log("Idade é menor ou igual a 18");
+// } else {
+//     console.log("Idade é maior que 18");
+// }
+
+// if (idade > 18) {
+//     console.log("Idade é maior que 18");
+// } else {
+//     console.log("Idade é menor ou igual a 18");
+// }
+
+// if (idade => 18) {
+//     console.log("Idade é maior ou igual a 18");
+// } else {
+//     console.log("Idade é menor que 18");
+// }
+
+// if (idade>18 && cidade=="Blumenau") {
+//     console.log("É maior de idade E mora em Blumenau");
+// } else {
+//     console.log("Não é maior de idade ou não mora em Blumenau");
+// }
+
+// if (idade>18 || cidade=="Blumenau") {
+//     console.log("É maior de idade ou mora em Blumenau");
+// } else {
+//     console.log("Não é maior de idade e não mora em Blumenau");
+// }

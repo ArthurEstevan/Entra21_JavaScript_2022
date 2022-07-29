@@ -1,37 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>JavaScript | Início</title>
 
-    <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS Booststrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Css Main -->
+    <link rel="stylesheet" href="/css/styled.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
 </head>
 
-<body onload="alerta()">
+<body class="container mb-5" onload="paragrafo03()">
 
-    <h1>Olhe o Console</h1>
+    <!-- ================= VOLTAR =================-->
+    <a href="/classes.html" class="btn btn-outline-dark mt-5">Go back</a>
 
-    <button class="btn btn-dark btn-outline-primary" onclick="arrays()">Definir Array</button>
-    <button class="btn btn-dark btn-outline-primary ms-4" onmouseover="arrays()">Passe Mouse</button>
-    <button class="btn btn-dark btn-outline-primary ms-4" onclick="insertArray(prompt('Qual seu nome?'))">Inserir Items em Array</button>
-    <button class="btn btn-dark btn-outline-primary ms-4" onclick="listar()">Listar For</button>
-    <hr>
+    <!-- ================= TÍTULO =================-->
+    <h1 class="text-center mt-5 font-monospace">O JavaScript é o melhor programa; sempre encontra uma function perfeita.</h1>
 
-    <p onclick="alerta('full onclick')">Click Click Click</p>
+    <br>
+
+    <!-- ================= START OF CARD =================-->
+    <div class="row justify-content-between" style="font-size: 2ch;">
+
+        <div class="col-4">
+
+            <div class="bg-transparent mt-4">
+
+                <div class="card-header mb-2">javascript</div>
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Inserindo Arrays</h5>
+
+                    <p class="card-text text-left" style="font-family: 'Uchen', serif;">
+                        Nesse card iremos ver como instaciar duas arrays, primeira não contém valor algum, segunda
+                        contém valor, você pode ver com mais detalhes no aquirvo de .js todo esse processo acontecendo
+                        aqui só a function é chamada através do scrip.
+                        Lembrando que o array fica visível apenas no console.
+                    </p>
+
+                </div>
+
+                <div class="card-footer">
+
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Console" target="_blank">mais info..</a>
+
+                    <br>
+
+                    <button class="btn btn-outline-dark mt-3" type="button" onclick="arrays()">Gerar Arrays</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-4">
+            <div class="bg-transparent mt-4" align="right">
+
+                <div class="card-header mb-2">javascript</div>
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Listando Array</h5>
+
+                    <p class="card-text" style="font-family: 'Uchen', serif;">
+                        Como em Java também podemos listar itens em arrays, aqui temos três métodos para fazer isso
+                        for (usamos o index para listar itens), for inteligente (não usamos index apenas listamos itens),
+                        for each (não usamos index apenas listamos itens). 
+                        Você pode ver com mais detalhes no aquirvo de .js todo esse processo acontecendo,
+                        aqui só a function é chamada através do scrip.
+                        Lembrando que o array fica visível apenas no console.
+                    </p>
+
+                </div>
+
+                <div class="card-footer">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/window/prompt" target="_blank">mais info..</a>
+                
+                    <br>
+
+                    <button class="btn btn-outline-dark mt-3" type="button" onclick="listando01()">For</button>
+                    <button class="btn btn-outline-dark mt-3" type="button" onclick="listando02()">For Inteligente</button>
+                    <button class="btn btn-outline-dark mt-3" type="button" onclick="listando03()">For Each</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row justify-content-between" style="font-size: 2ch;">
+
+        <div class="col-4">
+
+            <div class="bg-transparent mt-4">
+
+                <div class="card-header mb-2">javascript</div>
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Passando Array</h5>
+
+                    <p class="card-text" style="font-family: 'Uchen', serif;">
+                        Nesse exemplo inserimos uma palavra na array passada pelo usuário, também
+                        coloquei para que faça cinco .push da mesma para que possa ver que muda o tamanho da array.
+                        Você pode ver com mais detalhes no aquirvo de .js todo esse processo acontecendo,
+                        aqui só a function é chamada através do scrip.
+                        Lembrando que o array fica visível apenas no console.
+                    </p>
+
+                </div>
+
+                <div class="card-footer">
+                    
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">mais info..</a>
+
+                    <div class="input-group mt-3">
+                        <input type="text" class="form-control" id="palavra" name="palavra" placeholder="Recipient's world">
+                        <button class="btn btn-outline-dark" type="submit" onclick="insertArray()" value="Enviar">Button</button>
+                    </div>
+
+                
+                </div>
+
+            </div>
+
+        </div>
+        <!-- ================= END OF CARD =================-->
+
+        <!-- ================= START OF CARD =================-->
+        <div class="col-4">
+
+            <div class="bg-transparent mt-4" align="right">
+
+                <div class="card-header mb-2">javascript</div>
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Atributos de Click</h5>
+
+                    <p class="card-text" style="font-family: 'Uchen', serif;">
+                        Em Html temos funções para o 'click' como por exemplo: onclick (chama uma function),
+                        onmouseover (passando o mouse chama a function), onload (sempre que o elemento é carregado chama
+                        a function). Você pode ver com mais detalhes no aquirvo de .js todo esse processo acontecendo
+                        aqui só a function é chamada através do 'click'.
+                    </p>
+
+                </div>
+
+                <div class="card-footer">
+
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">mais info..</a>
+
+                    <br>
+
+                    <button class="btn btn-outline-dark mt-3" type="button" onclick="paragrafo01()">Onclick</button>
+                    <button class="btn btn-outline-dark mt-3" type="button" onmouseover="paragrafo02()">Onmouseover</button>
+                    <button class="btn btn-outline-dark mt-3" type="button">Onload</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ================= END OF CARD =================-->
+
     
-    <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-        
-    <!-- Class 02     -->
+
+    <!-- CHAMANDO JAVASCRIPT -->
     <script src="/js/class_02.js"></script>
 
 </body>
