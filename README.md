@@ -1,4 +1,4 @@
-# Entra![](/entra21numero.png) JavaScript ![](/javascript.png)
+# Entra![](./icons_readme/entra21numero.png) JavaScript ![](./icons_readme/javascript.png)
 
 ## _Repository with several subjects in JavaScript_
 
@@ -9,7 +9,7 @@
 
 ![Gif Entra21](https://raw.githubusercontent.com/seiler-emerson/Entra21_Logica_Java_2022/main/gif/entra21.gif)
 
-## ![](/lista_green.png) _Below I will leave a list of subjects_
+## ![](./icons_readme/lista_green.png) _Below I will leave a list of subjects_
 
 | CLASSES | SUBJECTS |
 |---------|---------|

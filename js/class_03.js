@@ -1,49 +1,94 @@
 
-console.warn(`Read`);
+// ========================= APRENDENDO LER ELEMENTOS =========================
+
+console.log('====================================================================');
+
+console.warn(`Aprendendo Read`);
+
+console.log("");
+
 let leitura = document.getElementById('ler-paragrado');
+
+// Mostra todo o elemento incluindo suas tags de abertura e fechamento
 console.log(leitura);
-console.log(`textContent => ${leitura.textContent}`);
-console.log(`innerHtml ${leitura.innerHTML}`);
 
-let leitura_teste = document.getElementById('leitura_teste');
-console.log(leitura_teste.textContent);
-console.log(leitura_teste.innerHTML);
+console.log("");
 
-console.log(`Read Warn`);
+// Apenas lê o elemento
+console.log(`Lendo parágrago com textContent => ${leitura.textContent}`);
+
+console.log("");
+
+// Lê o elemento além de ler também tag internas
+console.log(`Lendo parágrafo com innerHtml => ${leitura.innerHTML}`);
+
+console.log('====================================================================');
+
+// ========================= APRENDENDO ESCREVER ELEMENTOS =========================
+
+console.warn(`Aprendendo Write`);
+
+let escrevendo = document.getElementById('escrevendo-paragrafo')
+
+console.log("");
+
+// Aqui defino um título pro meu elemento
+escrevendo.title = "Helloooooooo";
+
+// Aqui alteramos o conteúdo de um elemento
+escrevendo.textContent = `Em JavaScript, existem várias propriedades que podem ser usadas para acessar e modificar o conteúdo de tags html, ou
+seja, textContent, innerText e innerHTML.A propriedade textContent retorna todo o texto contido por um elemento / nó e
+todos os seus descendentes, incluindo espaços e texto oculto CSS, exceto as tags.`
+
+console.log("");
+
+// ========================= LENDO ELEMENTOS COM FOR =========================
+
+console.log('====================================================================');
+
+console.warn(`Lendo com Foreach`);
+
+console.log("");
+
 let paragrafo = [...document.getElementsByTagName("p")]
-console.log(`Lendo todos os parágrados =>`, paragrafo);
+
+console.log(`Lendo todos os parágrados usando foreach =>`, paragrafo);
 
 paragrafo.forEach(element => {
-    console.log(element.innerHTML);
+  console.log(element.innerHTML);
 });
 
-console.log('Write');
-let escrita = document.getElementById('ler-paragrado')
-escrita.title = "www.google.com";
-escrita.textContent = "Esse paragrafo foi escrito com JavaScript"
+console.log('====================================================================');
 
-console.log('Testando Js')
-let comandos = document.getElementById('teste-1')
-comandos.textContent = "Verdade é verdade?"
+// ========================= UTILIZANDO FUNCTION PARA ALTERAR ELEMENTOS =========================
 
-function mudar_texto(conteudo) {
+function mudar_texto() {
 
-  let elemento = document.getElementById('teste-1');
-  elemento.title = conteudo;
-  elemento.textContent = conteudo;
+  document.getElementById('alterando').innerHTML = "Então se fez luz."
+
 }
 
-function add_text(conteudo) {
+function texto_original() {
 
-    let enter = document.createElement('br')
-    
-    document.body.append(enter)
+  document.getElementById('alterando').innerHTML = "No princípio era apenas escuridão..."
+  
+}
 
-    let elemento = document.createElement('div')
+// ========================= UTILIZANDO FUNCTION PARA ADICIONAR ELEMENTOS =========================
 
-    elemento.textContent = conteudo;
+function add_text() {
 
-    document.body.append(elemento);
+  let texto = document.getElementById('texto').value;
+
+  let enter = document.createElement('br')
+
+  document.body.append(enter)
+
+  let elemento = document.createElement('div')
+
+  elemento.textContent = texto;
+
+  document.body.append(elemento);
 
 }
 

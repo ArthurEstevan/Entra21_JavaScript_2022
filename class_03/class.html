@@ -1,55 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>JavaScript | Início</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS Booststrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
+    <!-- Css Main -->
+    <link rel="stylesheet" href="/css/styled.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
 </head>
 
-<body class="container">
+<body class="container mb-5">
 
-    <!-- HEADER -->
-    <header class="row">
-        <section class="col">
-            <div class="card">
+    <!-- ================= VOLTAR =================-->
+    <a href="/classes.html" class="btn btn-outline-dark mt-5">Go back</a>
 
-                <!-- HEADER -->
-                <div class="card-header">
-                    <h1>Manipulação de Html</h1>
-                </div>
-                <!-- HEADER -->
+    <!-- ================= TÍTULO =================-->
+    <h1 class="text-center mt-5 font-monospace">Sempre que você olhar para o céu e ver que ele não tem Fim... Lembre-se que JavaScript também é assim.</h1>
+
+    <br>
+
+    <!-- ================= START OF CARD =================-->
+    <div class="row justify-content-between" style="font-size: 2ch;">
+
+        <div class="col-4">
+
+            <div class="bg-transparent mt-4">
+
+                <div class="card-header mb-2">javascript</div>
 
                 <div class="card-body">
 
-                    <p></p>
-                    <p id="ler-paragrado">Lendo parágrafo com HTML</p>
-                    <p id="escrever-paragrafo"></p>
-                    <p id="leitura_teste">Temos todo tempo do mundoooo</p>
-                    <button id="botao">Click</button>
-                    <button id="teste-1" onclick="mudar_texto(prompt('Mudar Texto:'))"></button>
-                    <span id="teste-2">Mentira é Mentira?</span>
-                    <button id="" onclick="add_text(prompt('Qual seu conteúdo'))">Adicione um texto</button>
+                    <h5 class="card-title mb-2">Lendo Elementos com JavaScript</h5>
+
+                    <p class="card-text text-left" style="font-family: 'Uchen', serif;" id="ler-paragrado">
+                        Abaixo vamos usar um 'lorem' para podermos ler esse parágrafo em javascript, isso será
+                        muito utilizado para entendermos como capturar elementos ou até mesmo conteúdos do Html.
+                        Você pode ver com mais detalhes no aquirvo de .js todo esse processo acontecendo
+                        aqui só a function é chamada através do scrip.
+                        Lembrando que o array fica visível apenas no <i>console</i>.
+                    </p>
+
+                </div>
+
+                <div class="card-footer">
+
+                    <a href="https://fcnuvem.com.br/home/blog-primeiros-passos-para-manipular-html-dom-em-javascript/" target="_blank">mais info..</a>
+
                 </div>
 
             </div>
-        </section>
-    </header>
-    <!-- HEADER -->
+
+        </div>
+
+        <div class="col-4">
+            <div class="bg-transparent mt-4" align="right">
+
+                <div class="card-header mb-2">javascript</div>
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">TextContent</h5>
+
+                    <p class="card-text" style="font-family: 'Uchen', serif;" id="escrevendo-paragrafo" title="">
+                    </p>
+
+                </div>
+
+                <div class="card-footer">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/window/prompt" target="_blank">mais info..</a>
+                
+                    <br>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ================= END OF CARD =================-->
+
+    <br>
+
+    <!-- ================= START OF CARD =================-->
+    <div class="row justify-content-between" style="font-size: 2ch;">
+
+        <div class="col-4">
+
+            <div class="bg-transparent mt-4">
+
+                <div class="card-header mb-2">javascript</div>
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Adicionando Conteúdo com JavaScript</h5>
+
+                    <p class="card-text" style="font-family: 'Uchen', serif;">
+                        Vamos ver nesse card um jeito simples de inserir conteúdos na sua página
+                        usando javascript, através de uma function podemos apenas escrever nosso
+                        texto no textarea abaixo que ele será escrito em nossa página seguindo
+                        a identação do site. Você pode ver com mais detalhes no aquirvo de .js todo esse processo acontecendo
+                        aqui só a function é chamada através do scrip.
+                        Lembrando que o array fica visível apenas no console.
+                    </p>
+
+                </div>
+
+                <div class="card-footer">
+                    
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">mais info..</a>
+
+                    <div class="input-group mt-3">
+                        <input type="text" class="form-control" id="texto" name="palavra" placeholder="Recipient's world">
+                        <button class="btn btn-outline-dark" type="submit" onclick="add_text()" value="Enviar">Adicionar</button>
+                        <a class="btn btn-outline-dark" href="/class_03/class.html">Reload</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-4">
+
+            <div class="bg-transparent mt-4" align="right">
+
+                <div class="card-header mb-2">javascript</div>
+
+                <div class="card-body">
+
+                    <h5 class="card-title mb-2">Alterando Elemento com JavaScript</h5>
+
+                    <p class="card-text" style="font-family: 'Uchen', serif;">
+                        A propriedade innerHTML é uma parte do Document Object Model (DOM) que é usada para definir ou retornar o conteúdo HTML
+                        de um elemento. Onde o valor de retorno representa o conteúdo de texto do elemento HTML. Ele permite que o código
+                        JavaScript manipule um site que está sendo exibido. Mais especificamente, ele define ou retorna o conteúdo HTML (o HTML
+                        interno) de um elemento.
+                    </p>
+
+                </div>
+
+                <div class="card-footer">
+
+                    <a href="https://acervolima.com/qual-e-a-desvantagem-de-usar-innerhtml-em-javascript/" target="_blank">mais info..</a>
+
+                    <br>
+
+                    <button class="btn btn-outline-dark mt-3 mb-3" type="button" onclick="texto_original()">Texto Original</button>
+                    <button class="btn btn-outline-dark mt-3 mb-3" type="button" onclick="mudar_texto()">Alterar Texto</button>
+
+                    <p id="alterando">No princípio era apenas escuridão...</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ================= END OF CARD =================-->
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-
-    <!-- Class 02     -->
     <script src="/js/class_03.js"></script>
 
 </body>
