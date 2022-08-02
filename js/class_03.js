@@ -7,7 +7,7 @@ console.warn(`Aprendendo Read`);
 
 console.log("");
 
-let leitura = document.getElementById('ler-paragrado');
+let leitura = document.getElementById('ler-paragrafo');
 
 // Mostra todo o elemento incluindo suas tags de abertura e fechamento
 console.log(leitura);
