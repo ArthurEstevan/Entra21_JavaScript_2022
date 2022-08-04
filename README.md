@@ -18,10 +18,7 @@
 |Class_02|[Learning to define array, insert and list.](./class_02/)
 |Class_03|[Making the manipulation of Html with javascript.](./class_03/)
 |Class_04|[Learning to write javascript with jQuery.](./class_04/)
-<<<<<<< HEAD
 |Class_05|[Creating Page with JQuery and Making Icrud Person.](./class_05/)
-=======
->>>>>>> d897ad3acd7493b85273b41992c5fe933f39e571
 
 ## 🎫 _Bonus_
 
