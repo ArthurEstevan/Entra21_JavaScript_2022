@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Css Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <!-- Css Main-->
+    <!-- <link rel="stylesheet" href="/css/main.css"> -->
+
+    <!-- Icons -->
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
+
+    <style>
+        body {
+            /* Created with https://www.css-gradient.com */
+            background: #326DFF;
+            background: -webkit-linear-gradient(top left, #326DFF, #1B9BC0);
+            background: -moz-linear-gradient(top left, #326DFF, #1B9BC0);
+            background: linear-gradient(bottom right, #326DFF, #1B9BC0);
+        }
+    </style>
+
+</head>
+
+<body class="container">
+
+    <!-- ================= START OF NAVBAR =================-->
+    <header class="row mt-3">
+
+        <section class="col">
+
+            <div class="card">
+
+                <div class="card-body">
+
+                    <nav class="navbar navbar-expand-lg">
+
+                        <div class="container-fluid">
+
+                            <img src="/icons/javascript.png">
+
+                            <a class="navbar-brand ms-2" href="https://github.com/ArthurEstevan/Entra21_JavaScript_2022" target="_blank">JQuery</a>
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                            <div class="collapse navbar-collapse" id="navbarText">
+
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                    <li class="nav-item"><a class="nav-link" href="/exercises.html">Exercise</a></li>
+
+                                </ul>
+
+                                <span class="navbar-text">
+                                    <a target="_blank" class="me-3" href="https://github.com/ArthurEstevan"><img src="/icons/github.png" alt="GitHub"></a>
+                                    <a target="_blank" class="me-3" href="https://www.linkedin.com/in/arthur-estevan-vargas-189208223/"><img src="/icons/linkedin.png" alt="Linkedin"></a>
+                                    <a target="_blank" class="me-3" href="https://mail.google.com/mail/u/0/?fs=1&to=arthur.estevan01@gmail.com&su=Contato+-+via+perfil+github&body=Ol%C3%A1+Arthur+Tudo+bem?&tf=cm"><img src="/icons/gmail.png" alt="Gmail"></a>
+                                    <a target="_blank" class="me-3"href="https://www.instagram.com/arthur.estevan/"><img src="/icons/instagram.png" alt="Instagram"></a>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </section>
+        
+    </header>
+    <!-- ================= END OF NAVBAR =================-->   
+
+    <main class="row mt-5">
+        <section class="col">
+            <div class="card">
+
+                <div class="card-header m-4 text-center">
+                    <h1><img src="/icons/cadastro.png"> Icrud Person</h1>
+                </div>
+
+                <div class="card-body m-4">
+
+                    <div class="row g-3">
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="col-sm">
+                            <input type="text" class="form-control" id="age" placeholder="Age">
+                        </div>
+                        <div class="col-sm">
+                            <input type="text" class="form-control" id="number" placeholder="Phone Number">
+                        </div>
+                        <button type="submit" class="btn btn-primary col-sm" onclick="more()" id="submit">add</button>
+                    </div>
+
+                    <div class="row g-3 mt-1">
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="index" placeholder="ID">
+                        </div>
+                        <button type="reset" class="btn btn-primary col-sm-3 ms-2" id="reset">clean</button>
+                    </div>
+
+                        <table id="tabela" class="mt-5 table table-primary table-bordered table-striped table-hover">
+                            <thead>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Phone Number</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Arthur Estevan Vargas</td>
+                                    <td>19</td>
+                                    <td>(48) 9 9835-3862</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="card-footer">
+                        <footer></footer>
+                    </div>
+
+                </div>
+        </section>
+    </main>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src='/js/exercises.js'></script>
+
+</body>
+
+</html>

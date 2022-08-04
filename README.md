@@ -6,6 +6,7 @@
 >
 > - **_JAVASCRIPT - Programming language._**
 > - **_BOOTSTRAP - Framework Front-End._**
+> - **_JQUERY - Application Programming Interface._**
 
 ![Gif Entra21](https://raw.githubusercontent.com/seiler-emerson/Entra21_Logica_Java_2022/main/gif/entra21.gif)
 
@@ -16,6 +17,8 @@
 |Class_01|[Learning to display information in the console.](./class_01/)
 |Class_02|[Learning to define array, insert and list.](./class_02/)
 |Class_03|[Making the manipulation of Html with javascript.](./class_03/)
+|Class_04|[Learning to write javascript with jQuery.](./class_04/)
+|Class_05|[Creating Page with JQuery and Making Icrud Person.](./class_05/)
 
 ## 🎫 _Bonus_
 

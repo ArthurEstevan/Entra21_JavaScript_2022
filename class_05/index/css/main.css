@@ -1,0 +1,14 @@
+/* Created with https://www.css-gradient.com */
+
+.background-main {
+    background: #B72E8A;
+    background: -webkit-linear-gradient(top left, #B72E8A, #35A1D4);
+    background: -moz-linear-gradient(top left, #B72E8A, #35A1D4);
+    background: linear-gradient(bottom right, #B72E8A, #35A1D4);
+}
+
+.bloco {
+    display: inline;
+}
+
+
