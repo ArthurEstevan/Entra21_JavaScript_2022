@@ -61,14 +61,16 @@ $("#post").on("click", () => {
 
     var objeto = {
         
-        nome: "Arthur",
-        email: "arthur.estevan01@gmail.com",
+        nome: $("#nome").val(),
+        email: $("#email").val(),
 
     };
 
 
     $.ajax( {
+
         url: encodeURI("https://httpbin.org/post"),
+
         type: "post",
 
         header: {
@@ -89,4 +91,22 @@ $("#post").on("click", () => {
 
     })
 
+})
+
+$("#busca").on("click", () => {
+
+    console.log("Iniciando Busca");
+    let chave = $("#pokemon").val();
+
+    $.ajax({
+        url: encodeURI("https://pokeapi.co/api/v2/pokemon/"+chave),
+        type: "get",
+
+        success: (retornor) => {
+            console.log("Funcionou", retornor.nome);
+        },
+        error: (error) => {
+            console.log("Error", error);
+        }
+    })
 })
