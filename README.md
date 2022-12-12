@@ -19,6 +19,8 @@
 |Class_03|[Making the manipulation of Html with javascript.](./class_03/)
 |Class_04|[Learning to write javascript with jQuery.](./class_04/)
 |Class_05|[Creating Page with JQuery and Making Icrud Person.](./class_05/)
+|Class_06|[Learning about Ajax.](./class_06/)
+|Class_07|[Creating a page and using API Pokemon.](./class_07/)
 
 ## 🎫 _Bonus_
 
